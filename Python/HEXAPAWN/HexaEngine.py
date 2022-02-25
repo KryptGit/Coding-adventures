@@ -24,18 +24,18 @@ class functions:
             return 1
         else: 
             return 0
-      def edit(action ,pos, board, player = None):
-    default_value = str(pos)
-    if action == "remove":
-      board[pos] = default_value
-    if action == "add":
-      board[pos] = player
-  def move(player, startingpos, targetpostion, board):
-    if not startingpos == player:
-      print('you cant move the opponents peice')
-      return 
-    edit("remove", startingpos, board)
-    edit('add', targetpostion, board, player)
+    def edit(action ,pos, board, player = None):
+        default_value = str(pos)
+        if action == "remove":
+            board[pos] = default_value
+        if action == "add":
+            board[pos] = player
+    def move(player, startingpos, targetpostion, board):
+        if not startingpos == player:
+            print('you cant move the opponents peice')
+            return 
+        edit("remove", startingpos, board)
+        edit('add', targetpostion, board, player)
 
 
 

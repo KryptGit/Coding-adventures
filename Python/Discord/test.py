@@ -1,5 +1,9 @@
 import discord
 from discord.ext import commands
+import json
+import os
+directory = os.path.dirname(__file__)
+os.chdir(directory)
 
 
 
@@ -11,19 +15,8 @@ async def on_ready():
     print("Bot is ready!")
 @client.command()
 async def ping(ctx):
-    await ctx.send('pong')
+    await ctx.send(f'Pong! Server Ping:',round(client.latency * 1000),'ms')
 @client.command()
-async def AI(ctx):
-    while True:
-        speeach = input("talk")
-        await ctx.send(speeach)
-@client.command()
-async def spam(ctx):
-    x = True
-    while x == True:
-        await ctx.send("HAHAHA")
-@client.command()
-async def off(ctx):
-    x = False
+async def myBdayis(ctx, bday):
 
 client.run('OTI4MTIzMDY0MTU0MjAyMTEz.YdUL9g.XibpvaorG0zZ7fObfJlmXPKE0bA')
