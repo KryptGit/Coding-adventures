@@ -1,0 +1,32 @@
+Play BalckJack
+Loop 
+	Deal cards
+		var for player hand
+		get random number 2 to 11 - display to screen
+		add to player hand
+		get random number 2 to 11 - display to screen
+		add to player hand
+
+		var for dealer hand
+		get random number 2 to 11
+		add to dealer hand
+		get random number 2 to 11
+		add to dealer hand
+	Players take a turn
+		Loop :
+			display current player total 
+			promt - do you want to hit or stand
+			If hit:	
+				get random number 2 to 11 - display to screen
+				add to player hand
+
+
+		While player wants to and player hand is less than or equal to 21
+
+	dealer take a turn
+		if dealerhand is less than 15:
+			get random number 2 to 11
+			add to dealer hand
+
+	Find out who won
+While player still wants to play

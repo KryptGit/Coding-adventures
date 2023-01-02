@@ -1,0 +1,6 @@
+p = input("string")
+if 
+         
+
+
+    
