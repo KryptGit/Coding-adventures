@@ -1,5 +1,5 @@
 <template>
-  <h1>My first vue app</h1>
+  <h1>My first vue repl app</h1>
   <Modal></Modal>
 </template>
 
