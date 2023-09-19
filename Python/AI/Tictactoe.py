@@ -7,6 +7,7 @@ def generateGrid(size):
     return grid
 
 grid = generateGrid(9)
+grid = 0
 
 
     
